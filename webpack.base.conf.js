@@ -18,7 +18,8 @@ module.exports = {
          {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
-        use: "happypack/loader?id=jsx",
+        // use: "happypack/loader?id=jsx",
+        use: "babel-loader",
       },
       {
         test: /\.css$/,
@@ -51,21 +52,24 @@ module.exports = {
   },
   plugins: [
 
-    new HappyPack({
-      id:'jsx',
-      threadPool:happyThreadPool,
-      loaders: [
-        {
-          loader: "babel-loader",
-          options: {
-            // presets: ['@babel/preset-react',"@babel/preset-env"] ,
-            // plugins: ["@babel/plugin-transform-runtime"],
-            // cacheDirectory: true,
-          },
-          include: /src/
-        }
-      ]
-    }),
+    // new HappyPack({
+    //   id:'jsx',
+    //   threadPool:happyThreadPool,
+    //   loaders: [
+    //     {
+    //       loader: "babel-loader",
+    //       options: {
+    //         // presets: ['@babel/preset-react',"@babel/preset-env"] ,
+    //         // plugins: ["@babel/plugin-transform-runtime"],
+    //         // cacheDirectory: true,
+            
+    //             presets: ['react'],
+    //       },
+          
+    //       include: /src/
+    //     }
+    //   ]
+    // }),
     new HtmlWebpackPlugin({
       inject: true,
       template: "./index.html",

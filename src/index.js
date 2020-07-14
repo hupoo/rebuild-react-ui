@@ -5,7 +5,7 @@ import App from "./App.jsx";
 //   return <div>Hello React!</div>;
 // };
 ReactDOM.render(
- <App />,
+ <App /> ,
   document.getElementById("root"));
 if (module.hot) {
   // 通知 webpack改模块接受 hmr
