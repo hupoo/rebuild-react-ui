@@ -1,9 +1,10 @@
 import React from "react";
 import "./index.less";
 function App() {
+   const getText = () => 'Hello React & Webpack!!'
   return (
     <>
-      <h1>Hello React & Webpack!!</h1>
+      <h1>{getText()}</h1>
     </>
   );
 }

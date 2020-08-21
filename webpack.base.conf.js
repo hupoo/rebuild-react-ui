@@ -81,7 +81,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: getCssLoaders(0)
+        use: [...getCssLoaders(0)]
       },
       {
         test: /\.less$/,
