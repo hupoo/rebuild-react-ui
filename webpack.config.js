@@ -1,7 +1,6 @@
 const { merge } = require("webpack-merge")
 const baseConfig = require("./webpack.base.conf")
 const webpack = require("webpack")
-
 const SERVER_HOST = "127.0.0.1"
 const SERVER_PORT = 9000
 console.log("1111")
