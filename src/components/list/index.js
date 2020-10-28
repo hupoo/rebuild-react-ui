@@ -21,6 +21,8 @@ const AddTodo = (props) => {
 	)
 	return (
 		<div>
+
+
 			<p>click {counter} times</p>
 
 			<ul>

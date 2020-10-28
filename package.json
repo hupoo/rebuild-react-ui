@@ -48,7 +48,7 @@
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.10.4",
+    "@babel/polyfill": "^7.11.5",
     "@babel/runtime": "^7.11.2",
     "@babel/runtime-corejs3": "^7.11.2",
     "@reduxjs/toolkit": "^1.4.0",
@@ -57,6 +57,7 @@
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-katex": "^2.0.2",
     "react-redux": "^7.2.1",
     "react-router": "^5.2.0",
     "redux": "^4.0.5"

@@ -6,7 +6,7 @@ function App() {
    const getText = () => 'Hello React & Webpack!!'
   return (
     <>
-      {/* <List /> */}
+      <List />
       <Demo />
       <h1>{getText()}</h1>
     </>
