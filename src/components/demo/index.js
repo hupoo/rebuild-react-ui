@@ -75,7 +75,7 @@ export class Demo extends Component {
    
     return (
       <div>
-        <div>
+        {/* <div>
          
          
           <InlineMath>\int_0^\infty x^2 dx</InlineMath>
@@ -88,17 +88,17 @@ export class Demo extends Component {
           <BlockMath math={"f(x)=\\int_{-\\infty}^\\infty\\widehat f\\xi\,e^{2\\pi i\\xi x}\,d\\xi"}/>
               <BlockMath math={"\\text{实验课教学工作量}=\\sum\\frac{a*b*c}{2} "} />
          
-        </div>
-{/* 
-        <button onClick={_debounce(this.handle, 300)}>button1</button>
+        </div> */}
+
+        {/* <button onClick={_debounce(this.handle, 300)}>button1</button>
         <button
           onClick={() => {
             this.handleDB("hupoo wang");
           }}
         >
           button2
-        </button> */}
-        {/* <div
+        </button>  */}
+        <div
           className="box"
           ref="box"
           onMouseMove={this.boxMousemove}
@@ -111,8 +111,8 @@ export class Demo extends Component {
           />
 
           <div className="mask" ref="mask"></div>
-          <div className="enlarge" ref="enlarge"></div> */}
-        {/* </div> */}
+          <div className="enlarge" ref="enlarge"></div> 
+       </div>
       </div>
     );
   }
