@@ -6,7 +6,7 @@ const SERVER_PORT = 9000
 console.log("1111")
 module.exports = merge(baseConfig, {
 	mode: "development",
-	devtool: "eval-source-map",
+	devtool: "cheap-module-eval-source-map",
 	plugins: [new webpack.HotModuleReplacementPlugin()],
 	devServer: {
 		contentBase: "./dist",
